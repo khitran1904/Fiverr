@@ -1,0 +1,117 @@
+// Header
+
+// header{
+//     .navbar{
+//        @include styleText($color-black-light,$fs-1,$fw-normal);
+//        .nav-link{
+//            @include styleText($color-black-light,$fs-1,$fw-normal);
+//        }
+//     }
+// }
+
+//Class navbar-expand là nơi cài đặt ẩn hiện responsive  của màn hình : navbar-expand-lg, navbar-expand-md
+
+.fa-align-justify{
+    display: none;
+}
+@include responsive('extra-large') {
+    // code ở dưới đây sẽ đk gắn vào vị trí @content
+    .fa-align-justify {
+        display: block;
+    }
+}
+
+.col-2 {
+    img {
+        width: 89;
+        height: 27;
+        fill: none;
+    }
+}
+.header__right {
+    display: flex; // cho các con của header__right lên chung 1 hàng
+    // flex-grow:  giúp tăng kích thước của thẻ con vs điều kiện thẻ cha còn chỗ và chỉ đi vs flex
+    
+    .collapse{
+        width: 100%;
+    }
+    a {
+        color: #7a7d85;
+        white-space: nowrap;
+        font-weight: 600;
+        
+        &:hover {
+            color: #1dbf73;
+        }
+
+    }
+
+    .active {
+        color: #1fd0b6;
+        &:hover {
+            color: #1fd0b6;
+        }
+    }
+
+    .btn {
+        font-size: 14px;
+        border-radius: 4px;
+        font-weight: 600;
+        padding: 5px 16px;
+    }
+    .nav__item {
+        margin-right: 0px;
+    }
+    // .right__item1{
+    //     flex-grow: 2;
+    // }
+    @include responsive("extra-large") {
+        // code ở dưới đây sẽ đk gắn vào vị trí @content
+        .right__item1 {
+            display: none;
+        }
+    }
+    @include responsive("large") {
+        // code ở dưới đây sẽ đk gắn vào vị trí @content
+        .right__item2 {
+            display: none;
+        }
+    }
+}
+
+.header__left {
+    .btn {
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 0 3px 3px 0;
+        background-color: #1dbf73;
+        color: white;
+    }
+    input {
+        border-radius: 0px;
+        border-left: none;
+    }
+    .header__form {
+        width: 300px;
+    }
+    .input-group-text {
+        background-color: white;
+        border-right: 0px solid white;
+    }
+    @include responsive("extra-large") {
+        // code ở dưới đây sẽ đk gắn vào vị trí @content
+        .header__form {
+            width: 200px;
+        }
+        .btn-outline-success {
+            display: none;
+        }
+    }
+    @include responsive("large") {
+        // code ở dưới đây sẽ đk gắn vào vị trí @content
+        .header__form {
+            width: 100px;
+        }
+    }
+}

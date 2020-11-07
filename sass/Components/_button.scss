@@ -1,0 +1,17 @@
+
+.udeBtn-white{
+    @include styleButton($color-white-0,$color-gray-4,$border-radius,11px,12px);
+    @include styleText($color-gray-4,$fs-0,$fw-bold-1);
+    &:hover{
+        @include styleHover($color-white-0,$color-black-0,$color-black-0);
+    }
+}
+
+
+.udeBtn-red{
+    @include styleButton($color-red-0,$color-red-0,$border-radius,11px,12px);
+    @include styleText($color-white-0,$fs-0,$fw-bold-1);
+    &:hover{
+        @include styleHover($color-red-2,$color-red-2,$color-white-0);
+    }
+}

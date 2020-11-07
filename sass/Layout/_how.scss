@@ -1,0 +1,33 @@
+.how {
+    background-color: #f7f7f7;
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h2 {
+        color: #222325;
+        font-size: 35px;
+        line-height: 120%;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .how__content{
+        width: 90%;
+        margin-left: 5%;
+        i{
+            font-size: 50px;
+            margin-bottom: 20px;
+            color: #62646A;
+        }
+        h3{
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #555555;
+        }
+        p{
+            font-size: 18px;
+            color: #62646A;
+        }
+    }
+}
